@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #000000;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    
+    li {
+      display: inline;
+    }
+    a {
+        letter-spacing: 3px;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 20px;
+        margin-left: 40px;
+        font-family: 'Nova Square';
+        transition: 0.3s;
+    }
+    a:hover{
+        color: #0000ff;
+    }
+    p {
+        font-family: 'Nova Square';
+    }
+    #formPage{
+        text-align: center;
+        display: block;
+    }
+    #descPage{
+        text-align: center;
+        padding-top: 5em;
+    }
+    #info{
+        margin-left: 30%;
+        margin-right: 30%;
+        font-size: 20px;
+    }
+    form{
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    </style>
+
+<head>
+    <title>Exclusive Offer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Navigation Bar for the website -->
+    <ul>
+        <li><a href="index.html">Home </a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="images.html">Image Gallery</a></li>
+        <li><a href="excloffer.html">Exclusive Offer</a></li>
+    </ul>
+    <div id="descPage">
+        <p id="info"> We are giving away exclusive offers to anyone that fills out this form. These offers include deals throughout the year, exclusive information about the future of Samsung and entries to sponsored giveaways!</p>
+    </div>
+    <div id="formPage">
+        <form name="exclForm">
+            <br>
+            <p>Full Name: </p>
+            <input type="text" name="fullName">
+            <br>
+            <p>Address: </p>
+            <input type="text" name="address">
+            <br>
+            <p>Email: </p>
+            <input type="text" name="email">
+            <br>
+            <p>Phone Number: </p>
+            <input type="text" name="phone">
+            <br><br><center>
+            <input type="submit" style="align-content: center;" onclick="thankYou();">
+            </center>
+        </form>
+    </div>
+</body>
+<script>
+
+    function thankYou(){
+        if(validate() == true){
+        alert("Thank you for filling out the survey");
+        }
+    }
+    function validate(){
+        if(document.forms["exclForm"]["fullName"].value == "" ||
+           document.forms["exclForm"]["address"].value == "" ||
+           document.forms["exclForm"]["email"].value == "" ||
+           document.forms["exclForm"]["phone"].value == ""){
+            alert("there is something empty in the form. please fill in all information");
+            return false;
+        }
+        return true;
+    }
+</script>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+h1{
+  font-family: "Nova Square";
+}
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #000000;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    
+    li {
+      display: inline;
+    }
+    a {
+        letter-spacing: 3px;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 20px;
+        margin-left: 40px;
+        font-family: 'Nova Square';
+        transition: 0.3s;
+    }
+    a:hover{
+        color: #0000ff;
+    }
+
+    img{
+  border-radius: 2em;
+}
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+</head>
+<body>
+  <ul>
+    <li><a href="index.html">Home </a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="images.html">Image Gallery</a></li>
+    <li><a href="excloffer.html">Exclusive Offer</a></li>
+</ul> 
+<div class="header">
+    <h1>Image Gallery</h1>
+  </div>
+  
+  <div class="row"> 
+    <div class="column">
+      <img src="Samsung_Images/daniel-romero-bR_r3fJu-vk-unsplash.jpg" style="width:100%">
+      <img src="Samsung_Images/daniel-romero-gsYbutxoebc-unsplash.jpg" style="width:100%">
+      <img src="Samsung_Images/daniel-romero-PdfqLVSk-kg-unsplash.jpg" style="width:100%">
+      <img src="Samsung_Images/matt-wojtas--baMCm2CLKM-unsplash.jpg" style="width:100%">
+      <img src="Samsung_Images/max-whitehead-nRKzAy4w6mE-unsplash.jpg" style="width:100%">
+
+    </div>
+    
+    <div class="column">
+      <img src="Samsung_Images/pexels-photo-47261.jpeg" style="width:100%">
+      <img src="Samsung_Images/zana-latif-5uJMG9fUAO0-unsplash.jpg" style="width:100%">
+      <img src="Samsung_Images/pexels-photo-214487.jpeg" style="width:100%">
+      <img src="Samsung_Images/pexels-photo-404280.jpeg" style="width:100%">
+      <img src="Samsung_Images/emiliano-cicero-1mdV8fuUzZs-unsplash.jpg" style="width:100%">
+
+    </div> 
+     
+    <div class="column">
+      <img src="Samsung_Images/anh-nhat-uCqMa_s-JDg-unsplash.jpg" style="width:100%">
+      <img src="Samsung_Images/anh-nhat-EAxD2WHqxmY-unsplash.jpg" style="width:100%">
+      <img src="Samsung_Images/pexels-photo-4313857.jpeg" style="width:100%">
+      <img src="Samsung_Images/s10_models.png" style="width:100%">
+      <img src="Samsung_Images/pexels-photo-6497001.jpeg" style="width:100%">
+
+    </div>
+    
+  </div>
+     
+</body>
+</html>
